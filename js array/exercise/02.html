@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2</title>
+</head>
+
+    <script type="text/javascript">
+
+        var student = {"first_name":"Mary", "last_name":"Johnson", "birthday":1990, "sex":0};
+
+        var result = {};
+        result["full_name"] = student["first_name"] + " " + student["last_name"];
+        result["birthday"]  = 2020 - student["birthday"];
+        result["sex"]       = (student["sex"] == 1) ? "Boy" : "Girl";
+
+        for(x in result){
+            document.write(x + ": "+ result[x] + "<br/>");
+        }
+
+    </script>
+
+<body>
+    
+</body>
+</html>

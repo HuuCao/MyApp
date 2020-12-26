@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex10</title>
+</head>
+
+    <script type="text/javascript">
+
+        // SPLICE : thêm và xóa phần tử trong mảng
+        
+        var enter = "<br/>"; 
+        var arr = ["HTML","CSS", "JAVASCRIPT", "REACT", "PHP"];
+        //           0      1          2          3       4
+        //          -5     -4         -3         -2      -1
+
+        
+        document.write("Input: " + arr + enter);
+        document.write("<hr/>");
+        
+        /*
+        document.write("arr.splice(1,2): " + arr.splice(1,2)+ enter)
+        document.write("Output: " + arr + enter)
+        */
+
+        document.write('arr.splice(1,2,"A","B","C"): ' + arr.splice(1,2,"A","B","C") + enter);
+        document.write("output: " + arr + enter);
+
+    </script>
+
+<body>
+    
+</body>
+</html>

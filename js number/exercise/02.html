@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2</title>
+</head>
+<script type="text/javascript">
+    /*
+
+    12385   => max = 5, n = 1238
+    1238    => max = 8, n = 123
+    123     => max = 3, n = 12
+    12      => max = 2, n = 1
+    1       => max = 8
+
+    */
+    var n = new Number(12385);
+    var enter = "<br/>";
+
+
+    Number.prototype.getMaxDigit = function(){
+        var number = this.valueOf();
+        var max = 0;
+        while(number > 0){
+            var donvi = number % 10; 
+            max = (donvi > max) ? donvi : max;
+            number = (number - donvi) / 10;
+        }
+        return max;
+    }
+    document.write("So lon nhat la: " + n.getMaxDigit() + enter);
+    
+</script>
+<body>  
+    
+</body>
+</html>

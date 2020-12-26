@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex3</title>
+</head>
+
+    <script type="text/javascript">
+
+        var students = new Array(
+            ["Nguyen Van A",[5, 5, 8]],
+            ["Nguyen Van B",[5, 7, 9]],
+            ["Nguyen Van C",[4, 9, 7]],
+        )
+           
+        for(x in students){
+            var score = students[x] [1];
+            var temp = 0;
+            for(y in score){
+                temp += score[y];
+            }
+
+            students[x][1] = Math.floor(temp/score.length);
+            document.write(students[x] + "<br/>");
+        }
+
+    </script>
+
+<body>
+    
+</body>
+</html>

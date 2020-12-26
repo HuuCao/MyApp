@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex07</title>
+</head>
+
+<script type="text/javascript">
+
+    var enter = "<br/>";
+    var str = new String("JavaScript is very easy");
+
+    /*
+        javascript
+        0123456789
+    */
+    document.write("Input: " + str + enter);
+    //substr(start,lenght): trích xuất chuỗi từ vị trí s đến vị trí s+l-1
+    document.write("substr(0): " + str.substr(0) + enter);
+
+    //truyền lenght >0
+    document.write("substr(0,8): " + str.substr(0,8) + enter); //0 -> 0+8-1
+
+    //truyền start giá trị <0
+    document.write("substr(-5,3): " + str.substr(-5,3) + enter);
+</script>
+
+<body>
+    
+</body>
+</html>

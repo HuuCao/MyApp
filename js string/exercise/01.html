@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex01</title>
+</head>
+
+<script type="text/javascript">
+
+    var enter = "<br/>";
+
+    String.prototype.splitName = function(){
+        var result;
+
+        var spaceFirst = this.indexOf(" ");
+        var spaceEnd = this.lastIndexOf(" ");
+
+        result = ("Họ: " + this.slice(0,3) + enter);
+        result += ("Họ lót: " + this.slice(spaceFirst,spaceEnd) + enter);
+        result += ("Tên: " + this.slice(spaceEnd) + enter);
+
+        return result;
+    };
+
+    var fullName = new String(); 
+    fullName = ("Cao Minh Hữu");
+
+    document.write(fullName.splitName());
+    
+
+
+</script>
+
+<body>
+    
+</body>
+</html>

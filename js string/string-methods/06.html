@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex06</title>
+</head>
+
+<script type="text/javascript">
+
+    var enter = "<br/>";
+    var str = new String("JavaScript is very easy");
+
+    /*
+        javascript
+        0123456789
+    */
+    document.write("Input: " + str + enter);
+    // slice(start,end) : trích xuất chuỗi từ vị trí s đến vị trí e (không lấy giá trị end)
+ 
+    //lấy toàn bộ chuỗi s = 0, e không cần truyền
+    document.write("substring(0): " + str.substring(0) + enter);
+
+    //lấy chuỗi từ s = 3, e không cần truyền
+    document.write("substring(3): " + str.substring(3) + enter);
+
+    //lấy chuỗi từ vị trí 3 đến vị trí 8
+    document.write("substring(3,8): " + str.substring(3,9) + enter);
+
+    //lấy chuỗi từ vị trí đầu tiên s = 0
+    document.write("substring(0,1): " + str.substring(0,1) + enter);
+
+    //lấy kí tự cuối cùng trong chuỗi
+    document.write("substring(-1): " + str.substring(-1) + enter);
+
+</script>
+
+<body>
+    
+</body>
+</html>

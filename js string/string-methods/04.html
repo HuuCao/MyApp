@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex04</title>
+</head>
+
+<script type="text/javascript">
+
+    var enter = "<br/>";
+    var str = new String("JavaScript is very easy");
+
+    /*
+        javascript
+        0123456789
+    */
+
+    // search: tìm kiếm và trả về vị trí xuất hiện đầu tiên của một giá trị nào đó được tìm kiếm trong chuỗi
+    document.write("Input: " + str + enter);
+    document.write("Searh: " + str.search("very") + enter);
+
+    /* match: tìm kiếm và trả về giá trị được tìm kiếm trong chuỗi nếu giá trị đó tồn tại trong chuỗi
+              và trả về giá trị null nếu giá trị đó không tồn tại trong chuỗi
+    */
+    document.write("match: " + str.match("very") + enter);
+
+    // replace: thay thế giá trị old bằng giá trị new => replace(old, new)
+    document.write("replace: " + str.replace("easy","good") + enter);
+</script>
+
+<body>
+    
+</body>
+</html>
